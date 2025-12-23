@@ -1,0 +1,95 @@
+.intro1 h2 {
+    color: #363f8f;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.intro1 p {
+    color: #363f8f;
+    margin-left: 7px;
+}
+
+@media (min-width:750px) {
+    .intro {
+        background-image: url('../images/one.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 100vh;
+        background-position: center;
+
+    }
+
+    .intro1 {
+        padding-top: 14%;
+    }
+
+    .intro1 h2 {
+        margin-left: 8%;
+    }
+
+    .intro1 p {
+        margin-left: 8%;
+        font-size: 1.1rem;
+        font-weight: 600;
+        width: 50%;
+    }
+
+    .intro1 button {
+        margin-left: 8%;
+    }
+}
+
+button {
+    color: white;
+    border: none;
+    background-color: #363f8f;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+button:hover {
+    background-color: #e41f3a;
+}
+
+.heading h2{
+    color: #363f8f;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.fa-icon {
+    padding-top: 20px;
+}
+
+.fa-icon i {
+    background-color: #e41f3a;
+    color: white;
+    font-size: 1.7rem;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-card:hover .fa-icon i {
+    background-color: #363f8f;
+}
+
+.features .custom-card {
+    border: 2px solid #e41f3a;
+}
+
+.features .custom-card:hover {
+    border: 2px solid #363f8f;
+}
