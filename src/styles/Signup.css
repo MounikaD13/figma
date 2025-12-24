@@ -1,0 +1,97 @@
+.signup-container {
+    background-image: url('../images/one.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+/* LEFT SIDE */
+.signup-left {
+    width: 50%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .signup-left {
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+.signup-left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 7px;
+}
+
+.subtitle {
+    color: #555;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.signup-left input {
+    margin-bottom: 17px;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 8px;
+    border: 1px solid rgb(239, 238, 238);
+    background-color: rgb(247, 246, 246);
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 -2px 5px 0px rgba(155, 154, 154, 0.1);
+}
+
+.signup-left input:hover {
+    border: 1.5px solid black;
+}
+
+.signup-left input::placeholder {
+    color: black;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.signup-left button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #3f46a5;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.signup-left button:hover{
+    background-color:  #e41f3a;
+}
+
+.login-text {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.login-link {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media (max-width:770px) {
+    .login-link {
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(218, 72, 72);
+    background-color: rgb(218, 72, 72);
+    padding: 7px;
+    border-radius: 15px;
+    margin-left: 5px;
+}
+}
+
+

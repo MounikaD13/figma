@@ -1,0 +1,45 @@
+.navbar {
+  position: sticky !important;
+  top: 0px !important;
+  z-index: 999;
+  background-color: white;
+
+}
+
+.nav-item {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+@media (min-width:750px) {
+  .nav-link.active {
+    border-bottom: 2px solid #e41f3a;
+    /* underline color & thickness */
+  }
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.btn1,
+.btn2 {
+  border: 1px solid #434c9e;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn1 {
+  color: #434c9e;
+}
+
+.btn2 {
+  background-color: #434c9e;
+  color: white;
+}

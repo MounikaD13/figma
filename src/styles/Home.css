@@ -1,13 +1,18 @@
-.intro1 h2 {
+h2 {
     color: #363f8f;
     font-size: 2.5rem;
     font-weight: bold;
-    margin-left: 5px;
+    margin-left: 20px;
 }
-
+a {
+  text-decoration: none;
+}
 .intro1 p {
     color: #363f8f;
-    margin-left: 7px;
+    margin-left: 20px;
+}
+.intro1 button{
+    margin-left: 20px;
 }
 
 @media (min-width:750px) {
@@ -18,6 +23,7 @@
         width: 100%;
         min-height: 100vh;
         background-position: center;
+        overflow-x: hidden;
 
     }
 
@@ -45,24 +51,19 @@ button {
     color: white;
     border: none;
     background-color: #363f8f;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-right: 20px;
-    padding-left: 20px;
     border-radius: 10px;
     font-weight: 700;
     margin-left: 5px;
+    cursor: pointer;
 }
 
 button:hover {
     background-color: #e41f3a;
 }
 
-.heading h2{
-    color: #363f8f;
-    font-size: 2.5rem;
+.features .card-body h5 {
     font-weight: bold;
-    margin-left: 5px;
+    font-size: 1.4rem;
 }
 
 .fa-icon {
@@ -92,4 +93,147 @@ button:hover {
 
 .features .custom-card:hover {
     border: 2px solid #363f8f;
+}
+
+.overlay-card {
+    overflow: hidden;
+}
+
+.overlay-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+/* dark overlay */
+.overlay-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 1rem;
+}
+
+.overlay-content {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.works {
+    background-image: url('../images/three.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 700px;
+    overflow-x: hidden;
+}
+
+@media (min-width:992px) {
+    .step-box {
+        width: 50%;
+    }
+}
+
+.how-it-works {
+    margin-top: 70px;
+    font-size: 2.4rem;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/* Each step */
+.step-box {
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.step-box h5 {
+    font-weight: 600;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.subscribe {
+    background-color: #434c9e;
+    margin: 10px;
+    /* center horizontally */
+    border-radius: 22px;
+    max-width: 190vh;
+    /* 🔥 reduce overall width */
+
+}
+
+@media (min-width:750px) {
+    .subscribe {
+        margin: 30px auto;
+    }
+    .footer{
+   margin: 30px auto;
+    max-width: 190vh;
+    }
+    
+}
+
+.subscribe-input {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: auto;
+    color: black;
+}
+
+.subscribe-input input {
+    border: none;
+    outline: none;
+    margin-right: 15px;
+}
+
+.subscribe-input .btn {
+    background-color: #e41f3a;
+}
+
+.subscribe-input .btn:hover {
+    background-color: #363f8f;
+}
+
+.footer {
+  background: linear-gradient(90deg, #0b0f2e, #141a4f);
+}
+
+.footer .nav-link {
+  padding: 0;
+}
+
+.social-icon {
+  color: white;
+  margin-left: 12px;
+  font-size: 1.2rem;
+}
+
+.social-icon:hover {
+  color: #e41f3a;
+}
+
+.nav-item{
+    font-weight: normal;
+}
+.footer-image{
+    margin-left:50px;
+    align-content: center;
 }
