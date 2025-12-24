@@ -32,7 +32,7 @@ export default function Navbar() {
               <NavLink className="nav-link" to="/">Home</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/about">About Us</NavLink>
+              <NavLink className="nav-link disabled" aria-disabled="true" to="/about">About Us</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/coding">Coding</NavLink>
