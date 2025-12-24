@@ -123,9 +123,9 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className='everyone'>
+            <div className='everyone mt-5'>
                 <h2 className='text-center'><span style={spanColor}>Built for</span> Every one</h2>
-                <div className="container my-5">
+                <div className="container mb-5">
                     <div className="row g-4">
                         <div className="col-md-6">
                             <div className="position-relative overlay-card">
