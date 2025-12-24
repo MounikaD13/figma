@@ -10,7 +10,7 @@ a {
 .intro1 p {
     color: #363f8f;
 }
-.intro1 button,p{
+.intro1 button,p,h2{
     margin-left: 20px;
     margin-bottom: 20px;
 }
