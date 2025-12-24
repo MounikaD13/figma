@@ -1,7 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import '../styles/Home.css'
-import twoImg from "../images/two.png";
 import footer from '../images/footer.png'
 export default function Home() {
     const navigate = useNavigate()
@@ -161,7 +160,7 @@ export default function Home() {
                         <div className="col-md-6"></div>
                         <div className="col-md-6 text-white">
                             <h3 className="fw-bold mb-2 how-it-works">How It Works</h3>
-                            <p className="mb-4">
+                            <p className="mb-4 ms-0">
                                 Simplify the onboarding process by showing how easy it is to
                                 <br />
                                 start using CodeArena.
@@ -247,7 +246,6 @@ export default function Home() {
                     </div>
                 </div>
             </footer>
-
 
         </>
     )
