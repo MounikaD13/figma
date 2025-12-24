@@ -8,6 +8,9 @@ export default function Home() {
     const spanColor = {
         color: "#e41f3a"
     }
+    function handleSubmit(e){
+        e.preventDefault()
+    }
     return (
         <>
             <div className='intro mt-1'>
@@ -139,10 +142,10 @@ export default function Home() {
                 <h3>Subscribe for our tips</h3>
                 <p>Clearly communicate the benefits of subscribing,such as exclusive <br /> content.</p>
                 {
-                    <div className='subscribe-input'>
+                    <form className='subscribe-input' onSubmit={handleSubmit}>
                         <input type="text" placeholder='Enter your email address' />
                         <button className='btn text-white px-3 py-2'>Subscribe</button>
-                    </div>
+                    </form>
                 }
             </div>
             <footer className="footer py-2 mb-0 text-white ">

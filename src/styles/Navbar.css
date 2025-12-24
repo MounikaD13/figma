@@ -12,6 +12,9 @@
 }
 
 @media (min-width:750px) {
+  .nav-link{
+    font-weight: 600;
+  }
   .nav-link.active {
     border-bottom: 2px solid #e41f3a;
     /* underline color & thickness */
@@ -42,4 +45,13 @@
 .btn2 {
   background-color: #434c9e;
   color: white;
+}
+.btn1:hover{
+  background-color: #e41f3a;
+  color: white;
+  border: 1px solid #e41f3a;
+}
+.btn2:hover{
+  background-color: #e41f3a;
+  border: 1px solid #e41f3a;
 }

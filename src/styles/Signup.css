@@ -83,11 +83,9 @@
 }
 @media (max-width:770px) {
     .login-link {
-    color: whitesmoke;
+    color: rgb(198, 201, 38);
     text-decoration: none;
     cursor: pointer;
-    border: 1px solid rgb(218, 72, 72);
-    background-color: rgb(218, 72, 72);
     padding: 7px;
     border-radius: 15px;
     margin-left: 5px;
