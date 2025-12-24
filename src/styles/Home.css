@@ -62,7 +62,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.intro button:hover {
     background-color: #e41f3a;
 }
 
@@ -116,7 +116,6 @@ button:hover {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.45);
     border-radius: 1rem;
 }
 
@@ -128,6 +127,31 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.students {
+    background-image: url('../images/222.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+        padding: 70px 0;      /* IMPORTANT */
+
+    background-position: center;
+    overflow-x: hidden;
+}
+@media (max-width: 768px) {
+    .students h2 {
+        margin-bottom: 20px;
+    }
+
+    .students .card {
+        margin-bottom: 20px;
+    }
+}
+
+
+.everyone button:hover {
+    background-color: #e41f3a;
 }
 
 .works {
