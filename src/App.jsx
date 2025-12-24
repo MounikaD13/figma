@@ -7,6 +7,7 @@ import Coding from './components/Coding'
 import Login from './components/Login'
 import SingUp from './components/SingUp'
 import Mcq from './components/MCQPage'
+import CodingSolve from './components/CodingSolve'
 export default function App() {
   return (
     <div>
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/" element={<Home/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/coding' element={<Coding/>}/>
+        <Route path='/coding/:id' element={<CodingSolve/>}/>
         <Route path="/signup" element={<SingUp/>} />
         <Route path='/mcq' element={<Mcq/>}/>
         <Route path="/login" element={<Login/>} />

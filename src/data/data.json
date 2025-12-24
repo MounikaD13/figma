@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "questionSummary": "The Library’s Fine Calculator Story: Alice manages the local library and wants a way to calculate...",
+    "testCaseCount": 3,
+    "language": "Python"
+  },
+  {
+    "id": 2,
+    "questionSummary": "The Library’s Fine Calculator Story: Alice manages the local library and wants a way to calculate...",
+    "testCaseCount": 3,
+    "language": "Java"
+  },
+  {
+    "id": 3,
+    "questionSummary": "The Library’s Fine Calculator Story: Alice manages the local library and wants a way to calculate...",
+    "testCaseCount": 3,
+    "language": "Python"
+  },
+  {
+    "id": 4,
+    "questionSummary": "The Library’s Fine Calculator Story: Alice manages the local library and wants a way to calculate...",
+    "testCaseCount": 3,
+    "language": "Python"
+  },
+  {
+    "id": 5,
+    "questionSummary": "The Library’s Fine Calculator Story: Alice manages the local library and wants a way to calculate...",
+    "testCaseCount": 3,
+    "language": "Python"
+  }
+]

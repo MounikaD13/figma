@@ -1,0 +1,320 @@
+:root {
+    --brand-red: #D63A43;
+    --brand-blue: #2D3B8E;
+    --soft-bg: #F3F5FF;
+    --shell-bg: #F7F8FF;
+    --editor-bg: #2F2F2F;
+    --editor-text: #EDEDED;
+    --border: #D9D9D9;
+
+    /* single source of truth so both blocks match exactly */
+    --panel-height: 520px;
+    --panel-max-width: 1100px;
+}
+
+.solve-page {
+    background: #fff;
+    min-height: 100vh;
+}
+
+/* Ensure BOTH blocks share the same max width */
+.solve-maxWrap {
+    max-width: var(--panel-max-width) !important;
+}
+
+/* Title */
+.solve-title {
+    margin-top: 22px;
+    margin-bottom: 18px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.solve-title-red {
+    color: var(--brand-red);
+}
+
+.solve-title-blue {
+    color: var(--brand-blue);
+}
+
+/* Shared panel sizing */
+.solve-panel {
+    width: 100%;
+    height: var(--panel-height);
+}
+
+/* ===== TOP PROBLEM BLOCK ===== */
+.solve-problemCard {
+    background: var(--soft-bg);
+    border-radius: 10px;
+    padding: 22px 26px;
+    margin: 0 auto 22px auto;
+    overflow-y: auto;
+    height: 60vh; 
+    /* scrollable always */
+}
+
+.solve-problemTitle {
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+
+.solve-subHeading {
+    font-weight: 700;
+    margin: 12px 0 14px 0;
+}
+
+.solve-text {
+    color: #222;
+    line-height: 1.55;
+    margin-bottom: 10px;
+}
+
+.solve-noteLabel {
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+.solve-notes {
+    margin: 8px 0 14px 18px;
+}
+
+.solve-detailHeading {
+    font-weight: 800;
+    margin-top: 18px;
+}
+
+.solve-detailHint {
+    margin-top: 8px;
+    color: #333;
+    opacity: 0.85;
+}
+
+/* ===== BOTTOM EDITOR SHELL ===== */
+.solve-editorShell {
+    background: var(--shell-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ECECEC;
+    margin: 0 auto;
+}
+
+/* Top bar */
+.solve-topBar {
+    height: 56px;
+    padding: 10px 12px;
+    background: #F1F3FF;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.solve-langSelect {
+    width: 170px;
+    height: 40px;
+    font-weight: 600;
+}
+
+.solve-iconBtn {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    border: 1px solid #D6D6D6;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #2b2b2b;
+}
+
+.solve-iconBtn i {
+    font-size: 16px;
+}
+
+.solve-backBtn {
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #D6D6D6;
+    background: #fff;
+    padding: 0 12px;
+    font-weight: 600;
+    color: #878dbe;
+}
+
+/* Make the inner row fill panel height (minus top bar) */
+.solve-panelBody {
+    height: calc(var(--panel-height) - 56px);
+}
+
+/* Editor area */
+.solve-editorArea {
+    display: flex;
+    height: 100%;
+    background: var(--editor-bg);
+    border-right: 1px solid #E6E6E6;
+}
+
+.solve-gutter {
+    width: 56px;
+    background: #F2F3F8;
+    padding: 14px 0;
+    overflow: hidden;
+}
+
+.solve-lineNo {
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #6B6B6B;
+    font-size: 14px;
+}
+
+.solve-code {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: var(--editor-bg);
+    color: var(--editor-text);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 14px 16px;
+    resize: none;
+    height: 100%;
+}
+
+/* Console */
+.solve-console {
+    background: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.solve-consoleHeader {
+    font-weight: 800;
+    padding: 14px 16px 8px 16px;
+}
+
+.solve-consoleTabs {
+    display: flex;
+    gap: 10px;
+    padding: 0 16px 10px 16px;
+}
+
+.solve-tab {
+    border: none;
+    background: transparent;
+    padding: 8px 18px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #666;
+}
+
+.solve-tab.active {
+    background: #F1F3FF;
+    color: #111;
+}
+
+.solve-consoleBody {
+    padding: 0 16px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    height: 100%;
+}
+
+/* Sample box like screenshot */
+.solve-sampleBox {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    background: #fff;
+}
+
+.solve-miniLabel {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 6px;
+}
+
+.solve-sampleText {
+    font-size: 13px;
+    color: #333;
+}
+
+.solve-io {
+    width: 100%;
+    min-height: 130px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    resize: vertical;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.solve-outputWrap {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 12px;
+    background: #fff;
+    flex: 1;
+    overflow: auto;
+}
+
+.solve-outputLabel {
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.solve-output {
+    margin: 0;
+    white-space: pre-wrap;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 13px;
+}
+
+/* Run/Submit + hover swap */
+.solve-actions {
+    margin-top: 18px;
+}
+
+.solve-runBtn {
+    background: var(--brand-red);
+    color: #fff;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 12px;
+    font-weight: 800;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.18);
+    transition: background 0.2s ease;
+}
+
+.solve-submitBtn {
+    background: var(--brand-blue);
+    color: #fff;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 12px;
+    font-weight: 800;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.18);
+    transition: background 0.2s ease;
+}
+
+.solve-runBtn:hover {
+    background: var(--brand-blue);
+}
+
+.solve-submitBtn:hover {
+    background: var(--brand-red);
+}
+
+/* Responsive: reduce height so it fits better */
+@media (max-width: 992px) {
+    :root {
+        --panel-height: 420px;
+    }
+
+    .solve-editorArea {
+        border-right: none;
+    }
+}
