@@ -6,7 +6,7 @@ import About from './components/About'
 import Coding from './components/Coding'
 import Login from './components/Login'
 import SingUp from './components/SingUp'
-import Mcq from './components/Mcq'
+import Mcq from './components/MCQPage'
 export default function App() {
   return (
     <div>

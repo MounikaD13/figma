@@ -1,0 +1,63 @@
+.mcq-wrapper {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 15px;
+}
+
+.mcq-wrapper h2 {
+  color: #363f8f;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.mcq-title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 25px;
+  margin-top: 0% !important;
+  padding: 10px;
+}
+
+.mcq-card {
+  background: #f4f6fc;
+  border-radius: 16px;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+}
+
+.mcq-question {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  padding-left: 25px;
+}
+
+.radio-option input {
+  accent-color: #363f8f;
+  transform: scale(1.6);
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: #363f8f;
+  color: #fff;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #e63946;
+}

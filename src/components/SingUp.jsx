@@ -1,11 +1,17 @@
 import React from "react";
 import "../styles/Signup.css";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 
 export default function Signup() {
   function handleSubmit(e){
     e.preventDefault()
+    Swal.fire({
+  title: "Good job!",
+  text: "You clicked the button!",
+  icon: "success"
+});
   }
   return (
     <div className="signup-container">
