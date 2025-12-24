@@ -79,8 +79,11 @@ export default function Home() {
                                 <img src='https://thumbs.dreamstime.com/b/portrait-young-business-woman-modern-startup-office-interior-team-meeting-background-women-94645094.jpg' alt="Professionals" />
                                 <div className="overlay-content text-white text-center">
                                     <h5 className="fw-bold mb-3">FOR PROFESSIONALS</h5>
-                                    <button className="py-2 px-3">Get Started</button>
-                                </div>
+                                    <button
+                                        className="py-2 px-3"
+                                        onClick={() => navigate("/signup")}>
+                                        Get Started
+                                    </button>                                </div>
                             </div>
                         </div>
                         <div className="col-md-6">
@@ -88,8 +91,11 @@ export default function Home() {
                                 <img src='https://thumbs.dreamstime.com/b/creative-people-meeting-cafe-portrait-young-friends-sitting-coffee-shop-discussing-70779786.jpg' alt="Students" />
                                 <div className="overlay-content text-white text-center">
                                     <h5 className="fw-bold mb-3">FOR STUDENTS</h5>
-                                    <button className="py-2 px-3">Get Started</button>
-                                </div>
+                                    <button
+                                        className="py-2 px-3"
+                                        onClick={() => navigate("/signup")}>
+                                        Get Started
+                                    </button>                                </div>
                             </div>
                         </div>
 

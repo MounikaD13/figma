@@ -9,10 +9,10 @@ a {
 }
 .intro1 p {
     color: #363f8f;
-    margin-left: 20px;
 }
-.intro1 button{
+.intro1 button,p{
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 @media (min-width:750px) {
