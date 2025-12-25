@@ -28,9 +28,9 @@ export default function Home() {
             </div>
             <div className='heading mt-5'>
                 <h2 className='text-center'><span style={spanColor}>Feature</span> Highlights</h2>
-                <div className='features px-5'>
-                    <div className="row row-cols-1 row-cols-md-3 g-4 mt-4 text-center">
-                        <div className="col">
+                <div className='features mt-3 px-5'>
+                    <div className="row row-cols-1 row-cols-md-3 g-4 text-center">
+                        <div className="col text-center">
                             <div className="card h-100 custom-card">
                                 <div className='fa-icon'>
                                     <i className="fa-regular fa-lightbulb"></i>
@@ -69,53 +69,52 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div>
-                <div className='students mt-5'>
-                    <h2 className='text-center text-white'>What Our Students Say</h2>                    <div className='px-3'>
-                        <div className="row row-cols-1 row-cols-md-3 g-3 mt-4 text-center px-4" >
-                            <div className="col">
-                                <div className="card h-100 ">
-                                    <div className='students-stars '>
-                                        <h5 className='mt-2'>Nutan Sai </h5>
-                                        <p>Student</p>
-                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <div className="card-body">
-                                        <p className="card-text mb-1">"thanks to CodeArena,I went from <br />
-                                            understanding loops to solving advanced <br />
-                                            algorithm challenges. I can't recommend it <br />
-                                            enough to ffellow students</p>
-                                    </div>
+            <div className='students mt-5'>
+                <h2 className='text-center text-white'>What Our Students Say</h2>
+                <div className='mt-3'>
+                    <div className="row row-cols-1 row-cols-md-3 g-3 text-center px-4 px-md-0 mx-md-4" >
+                        <div className="col">
+                            <div className="card h-100 ">
+                                <div className='students-stars '>
+                                    <h5 className='mt-2'>Nutan Sai </h5>
+                                    <p>Student</p>
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <div className="card-body">
+                                    <p className="card-text mb-1">"thanks to CodeArena,I went from <br />
+                                        understanding loops to solving advanced <br />
+                                        algorithm challenges. I can't recommend it <br />
+                                        enough to fellow students</p>
                                 </div>
                             </div>
-                            <div className="col ">
-                                <div className="card h-100 custom-card">
-                                    <div className='students-stars text-center'>
-                                        <h5 className='mt-2'>Nutan Sai </h5>
-                                        <p>Student</p>
-                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <div className="card-body">
-                                        <p className="card-text mb-3">"thanks to CodeArena,I went from <br />
-                                            understanding loops to solving advanced <br />
-                                            algorithm challenges. I can't recommend it <br />
-                                            enough to ffellow students</p>
-                                    </div>
+                        </div>
+                        <div className="col ">
+                            <div className="card h-100 custom-card">
+                                <div className='students-stars text-center'>
+                                    <h5 className='mt-2'>Nutan Sai </h5>
+                                    <p>Student</p>
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <div className="card-body">
+                                    <p className="card-text mb-3">"thanks to CodeArena,I went from <br />
+                                        understanding loops to solving advanced <br />
+                                        algorithm challenges. I can't recommend it <br />
+                                        enough to fellow students</p>
                                 </div>
                             </div>
-                            <div className="col ">
-                                <div className="card h-100 custom-card">
-                                    <div className='students-stars text-center'>
-                                        <h5  className='mt-2'>Nutan Sai </h5>
-                                        <p>Student</p>
-                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <div className="card-body">
-                                        <p className="card-text mb-3">"thanks to CodeArena,I went from <br />
-                                            understanding loops to solving advanced <br />
-                                            algorithm challenges. I can't recommend it <br />
-                                            enough to ffellow students</p>
-                                    </div>
+                        </div>
+                        <div className="col ">
+                            <div className="card h-100 custom-card">
+                                <div className='students-stars text-center'>
+                                    <h5 className='mt-2'>Nutan Sai </h5>
+                                    <p>Student</p>
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <div className="card-body">
+                                    <p className="card-text mb-3">"thanks to CodeArena,I went from <br />
+                                        understanding loops to solving advanced <br />
+                                        algorithm challenges. I can't recommend it <br />
+                                        enough to fellow students</p>
                                 </div>
                             </div>
                         </div>
@@ -124,7 +123,7 @@ export default function Home() {
             </div>
             <div className='everyone mt-5'>
                 <h2 className='text-center'><span style={spanColor}>Built for</span> Every one</h2>
-                <div className="container mb-5">
+                <div className="container mb-5 mt-3">
                     <div className="row g-4">
                         <div className="col-md-6">
                             <div className="position-relative overlay-card">
@@ -189,7 +188,7 @@ export default function Home() {
             </div>
             <div className='conatiner subscribe d-flex flex-column justify-content-center align-items-center text-center text-white p-4'>
                 <h3>Subscribe for our tips</h3>
-                <p>Clearly communicate the benefits of subscribing,such as exclusive <br /> content.</p>
+                <p>Clearly communicate the benefits of subscribing,such as exclusive content.</p>
                 {
                     <form className='subscribe-input' onSubmit={handleSubmit}>
                         <input type="text" placeholder='Enter your email address' />

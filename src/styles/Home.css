@@ -2,7 +2,25 @@ h2 {
     color: #363f8f;
     font-size: 2.5rem;
     font-weight: bold;
-    margin-left: 20px;
+}
+
+@media (max-width:750px) {
+    .intro {
+        background-color: whitesmoke;
+        padding-top: 2%;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .intro h2 {
+        margin-left: 10%;
+    }
+
+    .intro p {
+        margin-left: 20%;
+    }
 }
 
 a {
@@ -14,10 +32,15 @@ a {
 }
 
 .intro1 button,
-p,
-h2 {
+.intro p {
     margin-left: 20px;
     margin-bottom: 20px;
+}
+
+@media (max-width:750px) {
+    .intro p {
+        margin-left: 10%;
+    }
 }
 
 @media (min-width:750px) {
@@ -69,6 +92,16 @@ button {
 .features .card-body h5 {
     font-weight: bold;
     font-size: 1.4rem;
+}
+
+@media (max-width:750px) {
+    .features .card-body h5 {
+        font-size: 1.1rem;
+    }
+
+    .intro button {
+        margin-left: 10%;
+    }
 }
 
 .fa-icon {
@@ -134,11 +167,13 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-        padding: 70px 0;      /* IMPORTANT */
+    padding: 70px 0;
+    /* IMPORTANT */
 
     background-position: center;
     overflow-x: hidden;
 }
+
 @media (max-width: 768px) {
     .students h2 {
         margin-bottom: 20px;
@@ -148,6 +183,40 @@ button {
         margin-bottom: 20px;
     }
 }
+
+/* Default: normal stacked behavior */
+.students .col {
+    transform: none;
+}
+
+/* Diagonal layout */
+@media (min-width: 750px) {
+    .students .col:nth-child(1) {
+        transform: translateY(0);
+    }
+
+    .students .col:nth-child(2) {
+        transform: translateY(50px);
+    }
+
+    .students .col:nth-child(3) {
+        transform: translateY(100px);
+    }
+
+    .students {
+        padding-bottom: 160px;
+    }
+
+    .students .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .students .card:hover {
+        transform: translateY(-5px);
+    }
+}
+
+
 
 
 .everyone button:hover {
@@ -172,6 +241,12 @@ button {
 .how-it-works {
     margin-top: 70px;
     font-size: 2.4rem;
+}
+
+@media (max-width:750px) {
+    .works h3 {
+        font-size: 1.7rem;
+    }
 }
 
 

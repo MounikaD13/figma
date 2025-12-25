@@ -16,6 +16,7 @@
     flex-direction: column;
     justify-content: center;
 }
+
 @media (max-width: 768px) {
     .signup-left {
         width: 100%;
@@ -66,8 +67,9 @@
     font-size: 1.1rem;
     cursor: pointer;
 }
-.signup-left button:hover{
-    background-color:  #e41f3a;
+
+.signup-left button:hover {
+    background-color: #e41f3a;
 }
 
 .login-text {
@@ -81,15 +83,24 @@
     text-decoration: none;
     cursor: pointer;
 }
-@media (max-width:770px) {
+
+@media (max-width:750px) {
     .login-link {
-    color: rgb(198, 201, 38);
-    text-decoration: none;
-    cursor: pointer;
-    padding: 7px;
-    border-radius: 15px;
-    margin-left: 5px;
-}
-}
+        color: rgb(199, 234, 104);
+        text-decoration: none;
+        cursor: pointer;
+        padding: 7px;
+        border-radius: 15px;
+        margin-left: 5px;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
 
+    .signup-left h1 {
+        font-size: 1.7rem;
+    }
 
+    .subtitle {
+        font-size: 1rem;
+    }
+}
