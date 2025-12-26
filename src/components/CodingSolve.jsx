@@ -127,7 +127,7 @@ export default function CodingSolve() {
                 <i className="fa-solid fa-up-right-and-down-left-from-center" />
               </button>
 
-              <button type="button" className="solve-backBtn" onClick={() => navigate("/")}>
+              <button type="button" className="solve-backBtn" onClick={() => navigate("/coding")}>
                 <i className="fa-solid fa-arrow-left me-2" />
                 Back
               </button>
